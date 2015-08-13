@@ -1,5 +1,23 @@
 BDD SPEC:
 
-1.  Objective:  
-    Input:
-    Output:
+1.  Objective:  User inputs date and returns Thursday
+    Input:      8/13/2015
+    Output:     Thursday
+
+2.  Objective:  User inputs yesterday's date returns Wednesday
+    Input:      8/12/2015
+    Output:     Wednesday
+
+3.  Objective:  User inputs tomorrow's date returns Wednesday
+    Input:      8/14/2015
+    Output:     Friday
+
+4.  Objective:  User inputs a date in a different week, and
+                still gets a correct response
+    Input:      7/27/2015
+    Output:     Monday
+
+5.  Objective:  User inputs a distant past date and still gets
+                a correct response.
+    Input:      1/1/1776
+    Output:     Monday

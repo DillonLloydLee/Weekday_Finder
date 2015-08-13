@@ -4,6 +4,8 @@
 
         function findWeekday($date) {
 
+            date_default_timezone_set("UTC");
+
             $f_date = date_create($date);
 
             $base_date = date_create("2015-08-13");
@@ -16,7 +18,7 @@
             $p_date = date_parse($date);
             if ($p_date["error_count"] == 0 && checkdate($p_date["month"],
                 $p_date["day"], $p_date["year"])) {
-                    
+
                 $days = $base_date->diff($f_date);
                 $pos_or_neg = ($days->format('%R'));
                 $days = ($days->format('%a'));
@@ -49,6 +51,7 @@
                 $output = "ERROR";
             }
 
+            $output = array($output, $date);
             return $output;
 
         }

@@ -8,7 +8,7 @@
 
             //Arrange
             $test_WeekdayFinder = new WeekdayFinder;
-            $date = "8/13/2015";
+            $date = "2015-08-13";
 
             //Act
             $result = $test_WeekdayFinder->findWeekday($date);
@@ -21,7 +21,7 @@
 
             //Arrange
             $test_WeekdayFinder = new WeekdayFinder;
-            $date = "8/12/2015";
+            $date = "2015-08-12";
 
             //Act
             $result = $test_WeekdayFinder->findWeekday($date);

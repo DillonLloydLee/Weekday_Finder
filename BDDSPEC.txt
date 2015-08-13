@@ -1,23 +1,28 @@
 BDD SPEC:
 
 1.  Objective:  User inputs date and returns Thursday
-    Input:      8/13/2015
+    Input:      2015-08-13
     Output:     Thursday
 
 2.  Objective:  User inputs yesterday's date returns Wednesday
-    Input:      8/12/2015
+    Input:      2015-08-12
     Output:     Wednesday
 
 3.  Objective:  User inputs tomorrow's date returns Wednesday
-    Input:      8/14/2015
+    Input:      2015-08-14
     Output:     Friday
 
 4.  Objective:  User inputs a date in a different week, and
                 still gets a correct response
-    Input:      7/27/2015
+    Input:      2015-07-27
     Output:     Monday
 
 5.  Objective:  User inputs a distant past date and still gets
                 a correct response.
-    Input:      1/1/1776
+    Input:      1776-01-01
     Output:     Monday
+
+6.  Objective:  User inputs an incorrectly formatted date, gets
+                a format correction prompt
+    Input:      1/1/1776
+    Output:     Incorrect Format

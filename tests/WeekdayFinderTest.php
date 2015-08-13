@@ -68,12 +68,20 @@
             $this->assertEquals("Monday", $result);
         }
 
+        function test_findWeekday_incorrectFormat() {
+
+            //Arrange
+            $test_WeekdayFinder = new WeekdayFinder;
+            $date = "Chicken";
+
+            //Act
+            $result = $test_WeekdayFinder->findWeekday($date);
+
+            //Assert
+            $this->assertEquals("ERROR", $result);
+        }
+
 
     }
 
  ?>
-
- 5.  Objective:  User inputs a distant past date and still gets
-                 a correct response.
-     Input:      1776-01-01
-     Output:     Monday

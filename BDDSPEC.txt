@@ -25,4 +25,4 @@ BDD SPEC:
 6.  Objective:  User inputs an incorrectly formatted date, gets
                 a format correction prompt
     Input:      1/1/1776
-    Output:     Incorrect Format
+    Output:     Bad Format

@@ -7,8 +7,15 @@
         <div class="container">
             <h1>Day of the Week Finder:</h1>
             <hr>
-            <h2>Here is day of the week for {{ value[1] }}:</h2>
-            <h3>It was a {{ value[0] }}!</h3>
+
+            {% if value[0] == "ERROR" %}
+                <h2>Please only input a proper date!</h2>
+            {% endif %}
+            {% if value[0] != "ERROR" %}
+                <h2>Here is day of the week for {{ value[1] }}:</h2>
+                <h3>It was a {{ value[0] }}!</h3>
+            {% endif %}
+
             <br>
             <p><a class='btn btn-primary btn-lrg' href='/'
 role='button'>Check another date!</a></p>

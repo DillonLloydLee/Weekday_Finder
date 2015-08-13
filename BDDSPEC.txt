@@ -8,14 +8,14 @@ BDD SPEC:
     Input:      2015-08-12
     Output:     Wednesday
 
-3.  Objective:  User inputs tomorrow's date returns Wednesday
+3.  Objective:  User inputs tomorrow's date returns Friday
     Input:      2015-08-14
     Output:     Friday
 
 4.  Objective:  User inputs a date in a different week, and
                 still gets a correct response
-    Input:      2015-07-27
-    Output:     Monday
+    Input:      2015-07-11
+    Output:     Saturday
 
 5.  Objective:  User inputs a distant past date and still gets
                 a correct response.

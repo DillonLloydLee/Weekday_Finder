@@ -41,6 +41,21 @@
             //Assert
             $this->assertEquals("Friday", $result);
         }
+
+        function test_findWeekday_lastMonth() {
+
+            //Arrange
+            $test_WeekdayFinder = new WeekdayFinder;
+            $date = "2015-07-11";
+
+            //Act
+            $result = $test_WeekdayFinder->findWeekday($date);
+
+            //Assert
+            $this->assertEquals("Saturday", $result);
+        }
+
+
     }
 
  ?>

@@ -55,7 +55,25 @@
             $this->assertEquals("Saturday", $result);
         }
 
+        function test_findWeekday_threeHundredYearsAgo() {
+
+            //Arrange
+            $test_WeekdayFinder = new WeekdayFinder;
+            $date = "1776-01-01";
+
+            //Act
+            $result = $test_WeekdayFinder->findWeekday($date);
+
+            //Assert
+            $this->assertEquals("Monday", $result);
+        }
+
 
     }
 
  ?>
+
+ 5.  Objective:  User inputs a distant past date and still gets
+                 a correct response.
+     Input:      1776-01-01
+     Output:     Monday

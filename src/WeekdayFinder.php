@@ -14,9 +14,13 @@
                 "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday");
 
             $days = $base_date->diff($f_date);
-            $days = ($days->format('%R%a'));
+            $pos_or_neg = ($days->format('%R'));
+            $days = ($days->format('%a'));
 
-            if ($days == -1) {
+            if ($pos_or_neg == "+") {
+                $output = $list_of_days[$days];
+            }
+            elseif ($pos_or_neg == "-") {
                 $output = "Wednesday";
             }
 

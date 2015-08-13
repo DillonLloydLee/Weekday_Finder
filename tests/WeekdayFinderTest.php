@@ -29,6 +29,18 @@
             //Assert
             $this->assertEquals("Wednesday", $result);
         }
+        function test_findWeekday_tomorrow() {
+
+            //Arrange
+            $test_WeekdayFinder = new WeekdayFinder;
+            $date = "2015-08-14";
+
+            //Act
+            $result = $test_WeekdayFinder->findWeekday($date);
+
+            //Assert
+            $this->assertEquals("Friday", $result);
+        }
     }
 
  ?>

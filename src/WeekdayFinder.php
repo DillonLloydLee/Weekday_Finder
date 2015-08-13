@@ -4,19 +4,21 @@
 
         function findWeekday($date) {
 
-            $date = new DateTime("2015-08-12");
-            $f_date = strtotime($date);
-            $f_date = date('Y-m-d', $f_date);
+            $f_date = date_create($date);
 
-            $base_date = new DateTime("2015-08-13");
-            $base_date = strtotime($base_date);
-            $base_date = date('Y-m-d', $base_date);
+            $base_date = date_create("2015-08-13");
 
             $output = "Thursday";
 
-            $days = $base_date->diff($date);
+            $list_of_days = array("Thursday", "Friday",
+                "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday");
 
+            $days = $base_date->diff($f_date);
+            $days = ($days->format('%R%a'));
 
+            if ($days == -1) {
+                $output = "Wednesday";
+            }
 
             return $output;
 

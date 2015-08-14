@@ -6,7 +6,7 @@
 
 ## Description
 
-_It's a tool for finding out what the day of the week was for any given date._
+_It's a tool for finding out what the day of the week was for any given date.  The HTML and page design is rather sparse; this was mostly about writing the code for figuring out the weekday and practicing use of PHPUnit._
 
 ## Setup
 
